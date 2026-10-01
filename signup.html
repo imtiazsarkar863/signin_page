@@ -381,15 +381,121 @@
 
         @media (max-height: 800px) {
             .panel {
+                height: calc(85vh + 20px);
                 overflow: clip;
             }
+        }
 
-            .logo {
-                top: -38px;
+        @media (max-width: 600px) {
+            body {
+                padding: 12px;
+                box-sizing: border-box;
             }
 
+            .panel {
+                width: 100%;
+                height: auto;
+                margin: 0 auto;
+                box-sizing: border-box;
+                overflow: visible;
+            }
+
+            .content {
+                left: 0;
+                padding: 20px 16px;
+                box-sizing: border-box;
+            }
+
+            .h1,
+            .h2,
+            .h3,
+            .h4,
+            .h5,
+            .email,
+            .pass,
+            .pass1,
+            .check1,
+            .check2,
+            .login,
+            .google,
+            .microsoft,
+            .end,
+            .signup,
+            .logo,
             .logo2 {
-                top: -80px;
+                position: static;
+            }
+
+            .h1 {
+                margin: 0 0 8px;
+                font-size: 28px;
+                line-height: 1.2;
+            }
+
+            .h2 {
+                margin: 0 0 18px;
+                font-size: 15px;
+            }
+
+            .h3,
+            .h4,
+            .h5 {
+                margin: 12px 0 6px;
+                font-size: 15px;
+            }
+
+            .email,
+            .pass,
+            .pass1 {
+                display: block;
+                width: 100%;
+                box-sizing: border-box;
+                margin: 0 0 10px;
+                padding: 12px;
+            }
+
+            .check1,
+            .check2 {
+                margin: 10px 0;
+            }
+
+            .login {
+                display: block;
+                width: 100%;
+                box-sizing: border-box;
+                margin: 12px 0;
+                padding: 14px;
+            }
+
+            .google,
+            .microsoft {
+                display: inline-block;
+                margin: 6px 10px 6px 0;
+                font-size: 12px;
+            }
+
+            .end {
+                display: block;
+                margin: 10px 0;
+                text-align: center;
+                font-size: 12px;
+            }
+
+            .social-logos {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 24px;
+                margin-top: 12px;
+            }
+
+            .logo2 img {
+                width: 40px;
+                height: 40px;
+            }
+
+            .back {
+                object-fit: cover;
             }
         }
     </style>
@@ -432,8 +538,10 @@
                 </div>
                 <div class="end">Have an account? <a class="signup" href="index.html">Log In Here!</a></div>
             </div>
-            <div><a class="logo" href="www.google.com"> <img src="g.svg" alt="google"></a></div>
-            <div><a class="logo2" href="www.microsoft.com"> <img src="m.svg" alt="google"></a></div>
+            <div class="social-logos">
+                <div><a class="logo" href="www.google.com"><img src="g.svg" alt="Google"></a></div>
+                <div><a class="logo2" href="www.microsoft.com"><img src="m.svg" alt="Microsoft"></a></div>
+            </div>
         </div>
     </div>
 </body>

@@ -4,11 +4,11 @@ A static sign-in and sign-up interface built with HTML and CSS.
 
 ## Preview
 
-Open `signin.html` in a web browser, then use the sign-up link to open `signup.html`. No build tools or package installation are required.
+Open `index.html` in a web browser, then use the sign-up link to open `signup.html`. No build tools or package installation are required.
 
 ## Project Files
 
-- `signin.html` - Sign-in page
+- `index.html` - Sign-in page and site entry point
 - `signup.html` - Sign-up page
 - `front.png` - Sign-in background image
 - `back 2.png` - Sign-up background image
